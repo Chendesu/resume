@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人简历</title>
+  <script src="./js/flexible_css.js,flexible.js"></script>
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/swiper.min.js"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="wrap" id="app">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- 个人信息 -->
+        <div class="swiper-slide info">
+          <div class="ball cat">
+            <div class="ball-outer">
+              <div class="ball-inner"></div>
+            </div>
+            <div class="ball-txt">猫奴</div>
+          </div>
+          <div class="ball idol">
+            <div class="ball-outer">
+              <div class="ball-inner"></div>
+            </div>
+            <div class="ball-txt">追星族</div>
+          </div>
+          <div class="ball fojoshi">
+            <div class="ball-outer">
+              <div class="ball-inner"></div>
+            </div>
+            <div class="ball-txt">宅</div>
+          </div>
+          <div class="ball superstition">
+            <div class="ball-outer">
+              <div class="ball-inner"></div>
+            </div>
+            <div class="ball-txt">小迷信</div>
+          </div>
+          <div class="img-box">
+            <div class="img-box-bg"></div>
+            <div class="img-box-bg-outer"></div>
+            <div class="img-box-pic">
+              <img src="./images/bobo.jpg" alt="">
+            </div>
+          </div>
+          <div class="info-main">
+            <div class="info-main-list clearfix">
+              <span>姓名：</span>
+              <strong>小王</strong>
+            </div>
+            <div class="info-main-list clearfix">
+              <span>出生年月：</span>
+              <strong>1997</strong>
+            </div>
+            <div class="info-main-list clearfix">
+              <span>电话：</span>
+              <strong>181********</strong>
+            </div>
+            <div class="info-main-list clearfix">
+              <span>电子邮箱：</span>
+              <strong>111@qq.com</strong>
+            </div>
+            <div class="info-main-sign">
+              <p>清醒时做事，糊涂时读书</p>
+              <p>大怒时睡觉，独处时思考</p>
+            </div>
+          </div>
+        </div>
+        <!-- 工作经历 -->
+        <div class="swiper-slide experience">
+          <div class="slide-hd">工作经历</div>
+          <div class="experience-list">
+            <p>2016.8-2017.5 | 华仕通（厦门）教育科技有限公司</p>
+            <p>职位：前端工程师</p>
+            <p>主要负责：根据UI设计图开发网站前端页面；负责各个大小节日活动的APP内嵌H5页面的开发。</p>
+            <div class="line"></div>
+          </div>
+          <div class="experience-list">
+            <p>2017.5-2018.5 | 厦门翼讯科技有限公司</p>
+            <p>职位：前端工程师</p>
+            <p>主要负责：模板网站素材的收集和开发；微信公众号H5页面的开发。</p>
+            <div class="line"></div>
+          </div>
+          <div class="experience-list">
+            <p>2018.6-2020.6 | 豪客来餐饮管理有限公司</p>
+            <p>职位：前端工程师</p>
+            <p>主要负责：自营外卖；会员商城（H5、微信小程序）；督导系统；各个大小节日的活动页及小游戏。</p>
+          </div>
+        </div>
+        <!-- 专业技能 -->
+        <div class="swiper-slide skill">
+          <div class="slide-hd">专业技能</div>
+          <div class="skill-level">
+            <div class="skill-level-tit">程度</div>
+            <div class="skill-level-main">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="ball l one">vue</div>
+          <div class="ball l two">JavaScript</div>
+          <div class="ball l three">Jquery</div>
+          <div class="ball l four">ajax</div>
+          <div class="ball l five">HTML</div>
+          <div class="ball l six">SCSS</div>
+          <div class="ball l seven">CSS3</div>
+          <div class="ball m one">PS</div>
+          <div class="ball m two">小程序</div>
+          <div class="ball m three">uni-app</div>
+          <div class="ball m four">iView</div>
+          <div class="ball m five">PHP</div>
+          <div class="ball s one">git</div>
+          <div class="ball s two">svn</div>
+        </div>
+        <!-- 项目经验 -->
+        <div class="swiper-slide ">
+          <div class="slide-hd">项目经验</div>
+
+        </div>
+        <!-- 教育背景 -->
+        <div class="swiper-slide">Slide 5</div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'vertical', // 垂直切换选项
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })        
+  </script>
+</body>
+</html>
